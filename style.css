@@ -899,13 +899,6 @@ div.aligncenter {
    margin: 0;
 }
 
-#social
-{
-    overflow: auto;
-    padding: 10px;
-    width: 100%;
-}
-
 #social .btn
 {
     float: left;

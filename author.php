@@ -7,7 +7,7 @@
     <?php the_post(); ?>
     <h1 class="archive-title"><?php
     printf(
-        '%sのバックナンバー',
+        __('Archive for %s', "skipjack"),
         get_the_author());
     ?></h1>
     <?php if (get_the_author_meta('description')): ?>

@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-03 23:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../404.php:8
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching, or one of the links below, can help."
+msgstr ""
+
+#: ../archive.php:9 ../author.php:10 ../category.php:8 ../tag.php:8
+#, php-format
+msgid "Archive for %s"
+msgstr ""
+
+#: ../comments.php:4
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../comments.php:23 ../comments.php:42
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: ../comments.php:24 ../comments.php:43
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../comments.php:54
+msgid "Comments are closed."
+msgstr ""
+
+#: ../functions.php:27
+msgid "Main Menu"
+msgstr ""
+
+#: ../functions.php:31
+msgid "Header Menu"
+msgstr ""
+
+#: ../functions.php:176
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: ../functions.php:179
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions.php:186
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../functions.php:186 ../functions.php:203
+msgid "(Edit)"
+msgstr ""
+
+#: ../functions.php:203
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions.php:213
+msgid "Home (1)"
+msgstr ""
+
+#: ../functions.php:215
+msgid "The first home widget area"
+msgstr ""
+
+#: ../functions.php:223
+msgid "Home (2)"
+msgstr ""
+
+#: ../functions.php:225
+msgid "The second home widget area"
+msgstr ""
+
+#: ../functions.php:233
+msgid "Home (3)"
+msgstr ""
+
+#: ../functions.php:235
+msgid "The third home widget area"
+msgstr ""
+
+#: ../functions.php:243
+msgid "Pages (1)"
+msgstr ""
+
+#: ../functions.php:245
+msgid "The primary widget area for Page"
+msgstr ""
+
+#: ../functions.php:253
+msgid "Pages (2)"
+msgstr ""
+
+#: ../functions.php:255
+msgid "The secondary widget area for Page"
+msgstr ""
+
+#: ../functions.php:263
+msgid "Posts (1)"
+msgstr ""
+
+#: ../functions.php:265
+msgid "The primary widget area for Post"
+msgstr ""
+
+#: ../functions.php:273
+msgid "Posts (2)"
+msgstr ""
+
+#: ../functions.php:275
+msgid "The secondary widget area for Post"
+msgstr ""
+
+#: ../functions.php:283
+msgid "footer (1)"
+msgstr ""
+
+#: ../functions.php:285
+msgid "The first footer widget area"
+msgstr ""
+
+#: ../functions.php:293
+msgid "footer (2)"
+msgstr ""
+
+#: ../functions.php:295
+msgid "The second footer widget area"
+msgstr ""
+
+#: ../functions.php:303
+msgid "footer (3)"
+msgstr ""
+
+#: ../functions.php:305
+msgid "The third footer widget area"
+msgstr ""
+
+#: ../functions.php:313
+msgid "footer (4)"
+msgstr ""
+
+#: ../functions.php:315
+msgid "The fourth footer widget area"
+msgstr ""
+
+#: ../functions.php:341
+msgid "Category"
+msgstr ""
+
+#: ../functions.php:346
+msgid "Tag"
+msgstr ""
+
+#: ../loop.php:19
+msgid "<span class=\"meta-nav\">&laquo; Previous</span>"
+msgstr ""
+
+#: ../loop.php:20
+msgid "<span class=\"meta-nav\">Next &raquo;</span>"
+msgstr ""
+
+#: ../search.php:5
+#, php-format
+msgid "Search Results: %s"
+msgstr ""
+
+#: ../shortcodes/internal-links.php:45
+msgid "Read More"
+msgstr ""

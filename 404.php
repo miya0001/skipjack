@@ -2,10 +2,10 @@
 <div id="content">
 <div id="alpha">
 
-    <h1 class="entry-title">ページが見つかりませんでした。</h1>
+    <h1 class="entry-title">Not Found</h1>
 
     <div class="entry-content">
-        <p>リクエストされたページが見つかりません。もしよろしければ検索するとみつかるかも知れません。</p>
+        <p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help.', 'skipjack' ); ?></p>
 					<?php get_search_form(); ?>
 	</div><!-- .entry-content -->
 	<script type="text/javascript">

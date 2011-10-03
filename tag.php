@@ -5,7 +5,7 @@
 
 				<h1 class="archive-title"><?php
 					printf(
-                        'タグのバックナンバー: %s',
+                        __('Archive for %s', 'skipjack'),
                         single_tag_title( '', false ));
 				?></h1>
 

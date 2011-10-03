@@ -16,7 +16,7 @@
 
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
 <div id="nav-below" class="navigation">
-<div class="nav-previous"><?php next_posts_link('<span class="meta-nav">&laquo; 過去の記事</span>'); ?></div>
-<div class="nav-next"><?php previous_posts_link('<span class="meta-nav">新しい記事 &raquo;</span>'); ?></div>
+<div class="nav-previous"><?php previous_posts_link(__('<span class="meta-nav">&laquo; Previous</span>', 'skipjack')); ?></div>
+<div class="nav-next"><?php next_posts_link(__('<span class="meta-nav">Next &raquo;</span>', 'skipjack')); ?></div>
 </div><!-- #nav-below -->
 <?php endif; ?>

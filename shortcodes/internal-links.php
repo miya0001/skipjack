@@ -42,7 +42,7 @@ public function display($p){
     $html .= '<div class="post_content">';
     $html .= '<h4>'.esc_attr($post->post_title).'</h4>';
     $html .= '<div class="post_excerpt">'.esc_attr($post->post_excerpt).'</div>';
-    $html .= '<div class="more"><a href="'.$p['url'].'">続きを読む</a></div>';
+    $html .= '<div class="more"><a href="'.$p['url'].'">'.__('Read More', 'skipjack').'</a></div>';
     $html .= '</div>';
     $html .= '</div>';
 

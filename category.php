@@ -5,7 +5,7 @@
 
 				<h1 class="archive-title"><?php
 					printf(
-                        'カテゴリーのバックナンバー: %s',
+                        __('Archive for %s', "skipjack"),
                         single_cat_title( '', false ));
 				?></h1>
 

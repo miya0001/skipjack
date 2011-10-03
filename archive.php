@@ -6,21 +6,21 @@
 <?php if (have_posts()): ?>
     <?php the_post(); ?>
     <h1 class="archive-title"><?php
-        $str = '%sのバックナンバー';
+        $str = __('Archive for %s', "skipjack");
         if (is_day()) {
             printf(
                 $str,
-                mysql2date('Y年n月j日', $post->post_date)
+                mysql2date('Y/n/j', $post->post_date, false)
             );
         } elseif (is_month()) {
             printf(
                 $str,
-                mysql2date('Y年n月', $post->post_date)
+                mysql2date('Y/n', $post->post_date, false)
             );
         } elseif (is_year()) {
             printf(
                 $str,
-                date('Y年', mysql2date('U', $post->post_date))
+                mysql2date('Y', $post->post_date, false)
             );
         }
     ?></h1>

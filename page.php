@@ -9,8 +9,6 @@
                     <div class="breadcrumb"><?php sj_breadcrumb(); ?></div>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 
-                    <?php social_button(); ?>
-
 					<div class="entry-content">
 						<?php the_content(); ?>
 					</div><!-- .entry-content -->

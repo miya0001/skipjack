@@ -1,7 +1,7 @@
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 				<?php if ( ! empty( $post->post_parent ) ) : ?>
-					<p class="page-title"><a href="<?php echo get_permalink( $post->post_parent ); ?>" title="<?php esc_attr( printf('%sに戻る', get_the_title( $post->post_parent ) ) ); ?>" rel="gallery"><?php
+					<p class="page-title"><a href="<?php echo get_permalink( $post->post_parent ); ?>" title="<?php esc_attr( printf('Back to %s', get_the_title( $post->post_parent ) ) ); ?>" rel="gallery"><?php
 						printf('<span class="meta-nav">&larr;</span> %s', get_the_title($post->post_parent));
 					?></a></p>
 				<?php endif; ?>
@@ -25,10 +25,10 @@
         <?php echo wp_get_attachment_image($post->ID, 'medium'); ?>
         <div class="navigation">
             <div class="nav-previous"><?php
-                previous_image_link('medium', '&larr; 前の写真');
+                previous_image_link('medium', '&larr; Previous');
             ?></div>
             <div class="nav-next"><?php
-                next_image_link('medium', '次の写真 &rarr;');
+                next_image_link('medium', 'Next &rarr;');
             ?></div>
         </div>
     </div>

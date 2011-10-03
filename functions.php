@@ -12,6 +12,8 @@ add_action('after_setup_theme', 'sj_setup');
 
 if (! function_exists('sj_setup')):
 function sj_setup() {
+	load_theme_textdomain( 'skipjack', TEMPLATEPATH . '/languages' );
+
     add_image_size('featured', 940, 360, true);
     add_image_size('list_subpages', 270, 152, true);
     set_post_thumbnail_size(638, 244, true);
@@ -22,11 +24,11 @@ function sj_setup() {
     add_theme_support('automatic-feed-links');
 
     register_nav_menus(array(
-        'primary' => "メインメニュー",
+        'primary' => __("Main Menu", "skipjack"),
     ));
 
     register_nav_menus(array(
-        'secondly' => "ヘッダーメニュー",
+        'secondly' => __("Header Menu", "skipjack"),
     ));
 
     add_custom_background();
@@ -105,13 +107,13 @@ function sj_load_scripts() {
             true
         );
         wp_register_script(
-            'sj',
+            'skipjack',
             get_bloginfo('template_directory').'/js/sj.js',
             array('jquery', 'carousel'),
             null,
             true
         );
-        wp_enqueue_script('sj');
+        wp_enqueue_script('skipjack');
     }
 }
 endif;
@@ -171,17 +173,17 @@ function sj_comment($comment, $args, $depth) {
         <div id="comment-<?php comment_ID(); ?>">
         <div class="comment-author vcard">
             <?php echo get_avatar($comment, 40); ?>
-            <?php printf(__('%s <span class="says">says:</span>', 'sj'), sprintf('<cite class="fn">%s</cite>', get_comment_author_link())); ?>
+            <?php printf(__('%s <span class="says">says:</span>', 'skipjack'), sprintf('<cite class="fn">%s</cite>', get_comment_author_link())); ?>
         </div><!-- .comment-author .vcard -->
         <?php if ($comment->comment_approved == '0') : ?>
-            <em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.', 'sj'); ?></em>
+            <em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.', 'skipjack'); ?></em>
             <br />
         <?php endif; ?>
 
         <div class="comment-meta commentmetadata"><a href="<?php echo esc_url(get_comment_link($comment->comment_ID)); ?>">
             <?php
                 /* translators: 1: date, 2: time */
-                printf(__('%1$s at %2$s', 'sj'), get_comment_date(),  get_comment_time()); ?></a><?php edit_comment_link(__('(Edit)', 'sj'), ' ');
+                printf(__('%1$s at %2$s', 'skipjack'), get_comment_date(),  get_comment_time()); ?></a><?php edit_comment_link(__('(Edit)', 'skipjack'), ' ');
             ?>
         </div><!-- .comment-meta .commentmetadata -->
 
@@ -198,7 +200,7 @@ function sj_comment($comment, $args, $depth) {
         case 'trackback' :
     ?>
     <li class="post pingback">
-        <p><?php _e('Pingback:', 'sj'); ?> <?php comment_author_link(); ?><?php edit_comment_link(__('(Edit)', 'sj'), ' '); ?></p>
+        <p><?php _e('Pingback:', 'skipjack'); ?> <?php comment_author_link(); ?><?php edit_comment_link(__('(Edit)', 'skipjack'), ' '); ?></p>
     <?php
             break;
     endswitch;
@@ -208,9 +210,9 @@ endif;
 if (!function_exists("sj_widgets_init")) :
 function sj_widgets_init() {
     register_sidebar(array(
-        'name' => 'ホームページ（１）',
+        'name' => __('Home (1)', "skipjack"),
         'id' => 'first-home-widget-area',
-        'description' => __('The first home widget area', 'sj'),
+        'description' => __('The first home widget area', 'skipjack'),
         'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title">',
@@ -218,9 +220,9 @@ function sj_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => 'ホームページ（２）',
+        'name' => __('Home (2)', "skipjack"),
         'id' => 'second-home-widget-area',
-        'description' => __('The second home widget area', 'sj'),
+        'description' => __('The second home widget area', 'skipjack'),
         'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title">',
@@ -228,9 +230,9 @@ function sj_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => 'ホームページ（３）',
+        'name' => __('Home (3)', "skipjack"),
         'id' => 'third-home-widget-area',
-        'description' => __('The third home widget area', 'sj'),
+        'description' => __('The third home widget area', 'skipjack'),
         'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title">',
@@ -238,9 +240,9 @@ function sj_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => '固定ページサイドバー（１）',
+        'name' => __('Pages (1)', "skipjack"),
         'id' => 'primary-page-widget-area',
-        'description' => __('The primary widget area', 'sj'),
+        'description' => __('The primary widget area for Page', 'skipjack'),
         'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h3 class="widget-title">',
@@ -248,9 +250,9 @@ function sj_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => '固定ページサイドバー（２）',
+        'name' => __('Pages (2)', "skipjack"),
         'id' => 'secondary-page-widget-area',
-        'description' => __('The secondary widget area', 'sj'),
+        'description' => __('The secondary widget area for Page', 'skipjack'),
         'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h3 class="widget-title">',
@@ -258,9 +260,9 @@ function sj_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => '投稿サイドバー（１）',
+        'name' => __('Posts (1)', "skipjack"),
         'id' => 'primary-widget-area',
-        'description' => __('The primary widget area', 'sj'),
+        'description' => __('The primary widget area for Post', 'skipjack'),
         'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h3 class="widget-title">',
@@ -268,9 +270,9 @@ function sj_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => '投稿サイドバー（２）',
+        'name' => __('Posts (2)', "skipjack"),
         'id' => 'secondary-widget-area',
-        'description' => __('The secondary widget area', 'sj'),
+        'description' => __('The secondary widget area for Post', 'skipjack'),
         'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h3 class="widget-title">',
@@ -278,9 +280,9 @@ function sj_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => 'フッター（１）',
+        'name' => __('footer (1)', "skipjack"),
         'id' => 'first-footer-widget-area',
-        'description' => __('The first footer widget area', 'sj'),
+        'description' => __('The first footer widget area', 'skipjack'),
         'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h3 class="widget-title">',
@@ -288,9 +290,9 @@ function sj_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => 'フッター（２）',
+        'name' => __('footer (2)', "skipjack"),
         'id' => 'second-footer-widget-area',
-        'description' => __('The second footer widget area', 'sj'),
+        'description' => __('The second footer widget area', 'skipjack'),
         'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h3 class="widget-title">',
@@ -298,9 +300,9 @@ function sj_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => 'フッター（３）',
+        'name' => __('footer (3)', "skipjack"),
         'id' => 'third-footer-widget-area',
-        'description' => __('The third footer widget area', 'sj'),
+        'description' => __('The third footer widget area', 'skipjack'),
         'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h3 class="widget-title">',
@@ -308,9 +310,9 @@ function sj_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => 'フッター（４）',
+        'name' => __('footer (4)', "skipjack"),
         'id' => 'fourth-footer-widget-area',
-        'description' => __('The fourth footer widget area', 'sj'),
+        'description' => __('The fourth footer widget area', 'skipjack'),
         'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h3 class="widget-title">',
@@ -336,39 +338,13 @@ function sj_posted_in() {
 
     $cat = get_the_category_list(', ');
     if ($cat) {
-        printf($tag, 'post_meta', 'カテゴリー: '.$cat);
+        printf($tag, 'post_meta', __('Category').': '.$cat);
     }
 
     $tag_list = get_the_tag_list('', ', ');
     if ($tag_list) {
-        printf($tag, 'post_meta last', 'タグ: '.$tag_list);
+        printf($tag, 'post_meta last', __('Tag').': '.$tag_list);
     }
-}
-endif;
-
-if (!function_exists('social_button')):
-function social_button(){
-?>
-<div id="social">
-<!--twitter-->
-<div class="btn tweet">
-<a href="http://twitter.com/share?url=<?php echo urlencode(get_permalink()); ?>" class="twitter-share-button" data-count="horizontal" data-lang="ja">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-</div>
-<!--hatena-->
-<div class="btn hatena">
-<a href="http://b.hatena.ne.jp/entry/<?php the_permalink(); ?>" class="hatena-bookmark-button" data-hatena-bookmark-title="<?php the_title(); ?>" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-</div>
-<!--facebook-->
-<div class="btn facebook">
-<iframe src="http://www.facebook.com/plugins/like.php?href=<?php echo urlencode(get_permalink()); ?>&amp;send=false&amp;layout=button_count&amp;width=110&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:21px;" allowTransparency="true"></iframe>
-</div>
-<!--plusone-->
-<div class="btn plusone">
-<g:plusone size="medium" href="<?php the_permalink(); ?>"></g:plusone>
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'ja'}</script>
-</div>
-</div><!--end #social-->
-<?php
 }
 endif;
 
@@ -406,15 +382,4 @@ function sj_get_the_excerpt($str) {
 }
 add_filter('get_the_excerpt', 'sj_get_the_excerpt');
 
-
-add_filter('wp_handle_upload', 'my_resize_image');
-function my_resize_image($file) {
-    $w = intval(1280);
-    $h = intval(1280);
-    $new = image_resize($file['file'], $w, $h);
-    if (is_file($new)) {
-      rename($new, $file['file']);
-    }
-    return $file;
-}
-
+?>

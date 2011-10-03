@@ -16,8 +16,6 @@
 						<?php sj_posted_in(); ?>
 					</div><!-- .entry-meta -->
 
-                    <?php social_button(); ?>
-
 					<div class="entry-content">
 						<?php the_content(); ?>
 					</div><!-- .entry-content -->
