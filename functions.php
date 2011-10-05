@@ -1,6 +1,5 @@
 <?php
 
-require_once(dirname(__FILE__).'/widgets/posts-widget.php');
 require_once(dirname(__FILE__).'/widgets/singlepost-widget.php');
 require_once(dirname(__FILE__).'/includes/add_meta_box.php');
 require_once(dirname(__FILE__).'/shortcodes/list_subpages.php');

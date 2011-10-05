@@ -350,26 +350,6 @@ body.attachment #content .entry-content .attachment img
     margin-right: 20px;
 }
 
-#home-widgets .widget_postscatwidget h3
-{
-    border-bottom: 1px dashed #dedede;
-}
-
-#home-widgets .widget_postscatwidget .post
-{
-    border-bottom: 2px solid #dedede;
-}
-
-#home-widgets .widget_postscatwidget .post_date
-{
-    font-size: 80%;
-}
-
-#home-widgets .single-post-widget .post_thumb
-{
-    float: right;
-}
-
 #home-widgets .single-post-widget .post_thumb img
 {
     border: 1px solid #555555;
