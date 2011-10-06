@@ -454,7 +454,6 @@ body.attachment #content .entry-content .attachment img
 
 #content #alpha .navigation
 {
-    overflow: auto;
     font-size: 80%;
 }
 
@@ -506,6 +505,7 @@ body.attachment #content .entry-content .attachment img
     border: 1px solid #dedede;
     border-radius: 5px;
     margin: 0px 0 10px 0;
+    clear: both;
 }
 
 .search #content #alpha .entry-title,
