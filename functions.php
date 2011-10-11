@@ -12,7 +12,7 @@ function sj_setup() {
 	load_theme_textdomain( 'skipjack', TEMPLATEPATH . '/languages' );
 
     add_image_size('featured', 940, 360, true);
-    add_image_size('list_subpages', 270, 152, true);
+    add_image_size('270x152', 270, 152, true);
     set_post_thumbnail_size(638, 244, true);
 
     add_editor_style();
