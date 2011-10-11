@@ -1,7 +1,6 @@
 <?php
 
 require_once(dirname(__FILE__).'/includes/add_meta_box.php');
-require_once(dirname(__FILE__).'/shortcodes/list_subpages.php');
 require_once(dirname(__FILE__).'/shortcodes/internal-links.php');
 
 define("SJ_EXCERPT_LENGTH", 120);

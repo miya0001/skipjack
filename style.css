@@ -1294,54 +1294,6 @@ body.attachment #content .entry-content .navigation
     line-height: 1.25em;
 }
 
-/*
-    list_subpages
-*/
-
-.list_subpages
-{
-    overflow: auto;
-    margin-bottom: 1em;
-}
-
-.list_subpages .post
-{
-    overflow: hidden;
-    float: left;
-    width: 290px;
-    margin: 10px;
-    border: 1px solid #dedede;
-    background-image: url(img/bg-white.png);
-    background-repeat: repeat-x;
-    background-position: left bottom;
-    border-radius: 5px;
-}
-
-.list_subpages .post_thumb a
-{
-    display: block;
-    width: 270px;
-    margin: 10px 10px 0 10px;
-}
-
-.list_subpages .post_content
-{
-    padding: 10px;
-}
-
-.list_subpages .post_content h4
-{
-    font-weight: bolder;
-    margin: 0px !important;
-}
-
-.list_subpages .post_content .post_excerpt
-{
-    font-size: 12px;
-    line-height: 18px;
-    margin-top: 10px;
-}
-
 .widget_search label
 {
     display: none;
