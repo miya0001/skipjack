@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-03 23:34+0900\n"
+"POT-Creation-Date: 2011-10-12 15:54+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,131 +40,135 @@ msgstr "最新のコメント <span class=\"meta-nav\">&rarr;</span>"
 msgid "Comments are closed."
 msgstr "コメントは無効です。"
 
-#: ../functions.php:27
+#: ../functions.php:24
 msgid "Main Menu"
 msgstr "メインメニュー"
 
-#: ../functions.php:31
+#: ../functions.php:28
 msgid "Header Menu"
 msgstr "ヘッダーメニュー"
 
-#: ../functions.php:176
+#: ../functions.php:173
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
 msgstr "%s <span class=\"says\">さん:</span>"
 
-#: ../functions.php:179
+#: ../functions.php:176
 msgid "Your comment is awaiting moderation."
 msgstr "あなたのコメントは承認待ちです。"
 
-#: ../functions.php:186
+#: ../functions.php:183
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s %2$s"
 
-#: ../functions.php:186 ../functions.php:203
+#: ../functions.php:183 ../functions.php:200
 msgid "(Edit)"
 msgstr "（編集）"
 
-#: ../functions.php:203
+#: ../functions.php:200
 msgid "Pingback:"
 msgstr "ピンバック"
 
-#: ../functions.php:213
+#: ../functions.php:210
 msgid "Home (1)"
 msgstr "ホーム (1)"
 
-#: ../functions.php:215
+#: ../functions.php:212
 msgid "The first home widget area"
 msgstr "ホームウィジェットエリア (1)"
 
-#: ../functions.php:223
+#: ../functions.php:220
 msgid "Home (2)"
 msgstr "ホーム (2)"
 
-#: ../functions.php:225
+#: ../functions.php:222
 msgid "The second home widget area"
 msgstr "ホームウィジェットエリア (2)"
 
-#: ../functions.php:233
+#: ../functions.php:230
 msgid "Home (3)"
 msgstr "ホーム (3)"
 
-#: ../functions.php:235
+#: ../functions.php:232
 msgid "The third home widget area"
 msgstr "ホームウィジェットエリア (3)"
 
-#: ../functions.php:243
+#: ../functions.php:240
 msgid "Pages (1)"
 msgstr "固定ページ (1)"
 
-#: ../functions.php:245
+#: ../functions.php:242
 msgid "The primary widget area for Page"
 msgstr "固定ページウィジェットエリア (1)"
 
-#: ../functions.php:253
+#: ../functions.php:250
 msgid "Pages (2)"
 msgstr "固定ページ (2)"
 
-#: ../functions.php:255
+#: ../functions.php:252
 msgid "The secondary widget area for Page"
 msgstr "固定ページウィジェットエリア (2)"
 
-#: ../functions.php:263
+#: ../functions.php:260
 msgid "Posts (1)"
 msgstr "投稿 (1)"
 
-#: ../functions.php:265
+#: ../functions.php:262
 msgid "The primary widget area for Post"
 msgstr "投稿ウィジェットエリア (1)"
 
-#: ../functions.php:273
+#: ../functions.php:270
 msgid "Posts (2)"
 msgstr "投稿 (2)"
 
-#: ../functions.php:275
+#: ../functions.php:272
 msgid "The secondary widget area for Post"
 msgstr "投稿ウィジェットエリア (2)"
 
-#: ../functions.php:283
+#: ../functions.php:280
 msgid "footer (1)"
 msgstr "フッター (1)"
 
-#: ../functions.php:285
+#: ../functions.php:282
 msgid "The first footer widget area"
 msgstr "フッターウィジェットエリア (1)"
 
-#: ../functions.php:293
+#: ../functions.php:290
 msgid "footer (2)"
 msgstr "フッター (2)"
 
-#: ../functions.php:295
+#: ../functions.php:292
 msgid "The second footer widget area"
 msgstr "フッターウィジェットエリア (2)"
 
-#: ../functions.php:303
+#: ../functions.php:300
 msgid "footer (3)"
 msgstr "フッター (3)"
 
-#: ../functions.php:305
+#: ../functions.php:302
 msgid "The third footer widget area"
 msgstr "フッターウィジェットエリア (3)"
 
-#: ../functions.php:313
+#: ../functions.php:310
 msgid "footer (4)"
 msgstr "フッター (4)"
 
-#: ../functions.php:315
+#: ../functions.php:312
 msgid "The fourth footer widget area"
 msgstr "フッターウィジェットエリア (4)"
 
-#: ../functions.php:341
+#: ../functions.php:338
 msgid "Category"
 msgstr "カテゴリー"
 
-#: ../functions.php:346
+#: ../functions.php:343
 msgid "Tag"
 msgstr "タグ"
+
+#: ../functions.php:354
+msgid "Home"
+msgstr "ホーム"
 
 #: ../loop.php:19
 msgid "<span class=\"meta-nav\">&laquo; Previous</span>"

@@ -351,7 +351,7 @@ function sj_breadcrumb() {
     $sep = '&nbsp;&raquo;&nbsp;';
     printf(
         '<a href="'.get_option('home').'" title="%1$s">%1$s</a>%2$s',
-        'ホーム',
+        __('Home', 'skipjack'),
         $sep
     );
 
