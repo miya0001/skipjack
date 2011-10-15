@@ -16,7 +16,6 @@
         <div class="entry-meta clearfix">
             <?php sj_posted_in(); ?>
         </div><!-- .entry-meta -->
-        <?php social_button(); ?>
         <div class="entry-content">
         <?php if (wp_attachment_is_image()) : ?>
             <div class="attachment">

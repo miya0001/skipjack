@@ -33,7 +33,7 @@
 					 * define skipjack_comment() and that will be used instead.
 					 * See skipjack_comment() in skipjack/functions.php for more.
 					 */
-					wp_list_comments( array( 'callback' => 'skipjack_comment' ) );
+					wp_list_comments( array( 'callback' => 'sj_comment' ) );
 				?>
 			</ol>
 
