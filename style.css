@@ -920,22 +920,45 @@ body.page-format-gallery #content #alpha .entry-content
     color: #ffffff;
 }
 
+/*
+    tags
+*/
+#tags
+{
+    margin-top: 2em;
+	clear: both;
+}
+
+#tags h2
+{
+    border-bottom: 3px solid #cccccc;
+    margin: 1em -5px;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px;
+    float: none;
+    clear: both;
+}
+
+
 /* =Comments
 -------------------------------------------------------------- */
 #comments {
+    margin-top: 2em;
 	clear: both;
+    border-top: 2px solid #dedede;
 }
 #comments .navigation {
 	padding: 0 0 18px 0;
 }
-h3#comments-title,
+h2#comments-title,
 h3#reply-title {
 	color: #000;
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 0;
 }
-h3#comments-title {
+h2#comments-title {
 	padding: 24px 0;
 }
 .commentlist {
@@ -1047,10 +1070,13 @@ input[type=submit] {
 	color: #333;
 }
 #respond {
-	border-top: 1px solid #e7e7e7;
+    background-image: url(img/textile.gif);
+    padding: 18px;
 	margin: 24px 0;
 	overflow: hidden;
 	position: relative;
+    border: 1px solid #dedede;
+    border-radius: 5px;
 }
 #respond p {
 	margin: 0;

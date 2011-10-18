@@ -336,11 +336,6 @@ function sj_posted_in() {
     if ($cat) {
         printf($tag, 'post_meta', __('Category').': '.$cat);
     }
-
-    $tag_list = get_the_tag_list('', ', ');
-    if ($tag_list) {
-        printf($tag, 'post_meta last', __('Tag').': '.$tag_list);
-    }
 }
 endif;
 
