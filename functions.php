@@ -1,5 +1,7 @@
 <?php
 
+define("SKIPJACK_VERSION", "1.1.0");
+
 require_once(dirname(__FILE__).'/includes/add_meta_box.php');
 
 define("SJ_EXCERPT_LENGTH", 120);
