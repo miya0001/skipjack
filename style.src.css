@@ -149,7 +149,7 @@ body.attachment #content .entry-content .attachment img
     left: 0px;
     border: 1px solid #aaaaaa;
     border-radius: 5px;
-    background-color: #555555;
+    background-color: #666666;
     white-space: nowrap;
     padding: 5px;
     margin: 0;
@@ -381,7 +381,7 @@ body.attachment #content .entry-content .attachment img
 #footer
 {
     overflow: auto;
-    background-color: #555555;
+    background-color: #666666;
     margin-top: 30px;
     padding: 10px;
     color: #ffffff;
@@ -911,7 +911,7 @@ body.page-format-gallery #content #alpha
 body.single-format-gallery #content #alpha .entry-content,
 body.page-format-gallery #content #alpha .entry-content
 {
-    background-color: #555555;
+    background-color: #666666;
     padding: 30px 0 0 0;
     background-image: url(img/bg.png);
     background-repeat: repeat-x;
@@ -1295,7 +1295,7 @@ body.attachment #content .entry-content .navigation
     padding: 10px;
     overflow: auto;
     border-radius: 5px;
-    background-color: #555555;
+    background-color: #666666;
     background-image: url(img/bg.png);
     background-repeat: repeat-x;
     background-position: left bottom;
