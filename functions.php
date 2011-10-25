@@ -1,6 +1,6 @@
 <?php
 
-define("SKIPJACK_VERSION", "1.1.0");
+define("SKIPJACK_VERSION", "1.2.0");
 
 require_once(dirname(__FILE__).'/includes/add_meta_box.php');
 
@@ -101,14 +101,14 @@ function sj_load_scripts() {
             'carousel',
             get_bloginfo('template_directory').'/js/carousel.js',
             array('jquery'),
-            null,
+            SKIPJACK_VERSION,
             true
         );
         wp_register_script(
             'skipjack',
             get_bloginfo('template_directory').'/js/sj.js',
             array('jquery', 'carousel'),
-            null,
+            SKIPJACK_VERSION,
             true
         );
         wp_enqueue_script('skipjack');

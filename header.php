@@ -12,9 +12,9 @@
 ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/reset.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/style.css?<?php echo SKIPJACK_VERSION; ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/style.css?ver=<?php echo SKIPJACK_VERSION; ?>" />
 <?php if (is_child_theme()): ?>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?<?php echo SKIPJACK_VERSION; ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?ver=<?php echo SKIPJACK_VERSION; ?>" />
 <?php endif; ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php

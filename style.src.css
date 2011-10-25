@@ -153,7 +153,6 @@ body.attachment #content .entry-content .attachment img
     white-space: nowrap;
     padding: 5px;
     margin: 0;
-    z-index: 10;
     background-image: url(img/bg.png);
     background-repeat: repeat-x;
     background-position: left bottom;
@@ -188,7 +187,6 @@ body.attachment #content .entry-content .attachment img
     height: 50px;
     float: left;
     position: relative;
-    z-index: 10;
 }
 
 #primary-menu > div > ul > li > a
