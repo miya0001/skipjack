@@ -30,13 +30,12 @@ $('#primary-menu > div > ul > li').each(function(){
     if ($('.children', this).length) {
         $(this).addClass('has_child');
     }
-    $(this).bind('mouseenter', function(){
+    $(this).hover(function(){
         $(this).css('z-index', 100);
-        $('> ul', this).slideDown(200);
-    });
-    $(this).bind('mouseleave', function(){
+        $('> ul', this).stop(true, true).slideDown(200);
+    }, function(){
         $(this).css('z-index', 1);
-        $('> ul', this).delay(500).slideUp(200);
+        $('> ul', this).stop(true, true).delay(300).slideUp(100);
     });
 });
 
