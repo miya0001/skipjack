@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-12 15:54+0900\n"
+"POT-Creation-Date: 2011-10-26 20:04+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,145 +33,142 @@ msgid ""
 "This post is password protected. Enter the password to view any comments."
 msgstr ""
 
-#: ../comments.php:23 ../comments.php:42
+#: ../comments.php:11
+#, php-format
+msgid "One Response to %2$s"
+msgstr ""
+
+#: ../comments.php:17 ../comments.php:36
 msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
 msgstr ""
 
-#: ../comments.php:24 ../comments.php:43
+#: ../comments.php:18 ../comments.php:37
 msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: ../comments.php:54
-msgid "Comments are closed."
-msgstr ""
-
-#: ../functions.php:24
+#: ../functions.php:25
 msgid "Main Menu"
 msgstr ""
 
-#: ../functions.php:28
+#: ../functions.php:29
 msgid "Header Menu"
 msgstr ""
 
-#: ../functions.php:173
+#: ../functions.php:174
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
 msgstr ""
 
-#: ../functions.php:176
+#: ../functions.php:177
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../functions.php:183
+#: ../functions.php:184
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: ../functions.php:183 ../functions.php:200
+#: ../functions.php:184 ../functions.php:201
 msgid "(Edit)"
 msgstr ""
 
-#: ../functions.php:200
+#: ../functions.php:201
 msgid "Pingback:"
 msgstr ""
 
-#: ../functions.php:210
+#: ../functions.php:211
 msgid "Home (1)"
 msgstr ""
 
-#: ../functions.php:212
+#: ../functions.php:213
 msgid "The first home widget area"
 msgstr ""
 
-#: ../functions.php:220
+#: ../functions.php:221
 msgid "Home (2)"
 msgstr ""
 
-#: ../functions.php:222
+#: ../functions.php:223
 msgid "The second home widget area"
 msgstr ""
 
-#: ../functions.php:230
+#: ../functions.php:231
 msgid "Home (3)"
 msgstr ""
 
-#: ../functions.php:232
+#: ../functions.php:233
 msgid "The third home widget area"
 msgstr ""
 
-#: ../functions.php:240
+#: ../functions.php:241
 msgid "Pages (1)"
 msgstr ""
 
-#: ../functions.php:242
+#: ../functions.php:243
 msgid "The primary widget area for Page"
 msgstr ""
 
-#: ../functions.php:250
+#: ../functions.php:251
 msgid "Pages (2)"
 msgstr ""
 
-#: ../functions.php:252
+#: ../functions.php:253
 msgid "The secondary widget area for Page"
 msgstr ""
 
-#: ../functions.php:260
+#: ../functions.php:261
 msgid "Posts (1)"
 msgstr ""
 
-#: ../functions.php:262
+#: ../functions.php:263
 msgid "The primary widget area for Post"
 msgstr ""
 
-#: ../functions.php:270
+#: ../functions.php:271
 msgid "Posts (2)"
 msgstr ""
 
-#: ../functions.php:272
+#: ../functions.php:273
 msgid "The secondary widget area for Post"
 msgstr ""
 
-#: ../functions.php:280
+#: ../functions.php:281
 msgid "footer (1)"
 msgstr ""
 
-#: ../functions.php:282
+#: ../functions.php:283
 msgid "The first footer widget area"
 msgstr ""
 
-#: ../functions.php:290
+#: ../functions.php:291
 msgid "footer (2)"
 msgstr ""
 
-#: ../functions.php:292
+#: ../functions.php:293
 msgid "The second footer widget area"
 msgstr ""
 
-#: ../functions.php:300
+#: ../functions.php:301
 msgid "footer (3)"
 msgstr ""
 
-#: ../functions.php:302
+#: ../functions.php:303
 msgid "The third footer widget area"
 msgstr ""
 
-#: ../functions.php:310
+#: ../functions.php:311
 msgid "footer (4)"
 msgstr ""
 
-#: ../functions.php:312
+#: ../functions.php:313
 msgid "The fourth footer widget area"
 msgstr ""
 
-#: ../functions.php:338
+#: ../functions.php:339
 msgid "Category"
 msgstr ""
 
-#: ../functions.php:343
-msgid "Tag"
-msgstr ""
-
-#: ../functions.php:354
+#: ../functions.php:350
 msgid "Home"
 msgstr ""
 
@@ -188,6 +185,6 @@ msgstr ""
 msgid "Search Results: %s"
 msgstr ""
 
-#: ../shortcodes/internal-links.php:45
-msgid "Read More"
+#: ../single.php:34
+msgid "Tag"
 msgstr ""

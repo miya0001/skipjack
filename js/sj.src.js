@@ -36,7 +36,7 @@ $('#primary-menu > div > ul > li').each(function(){
     });
     $(this).bind('mouseleave', function(){
         $(this).css('z-index', 1);
-        $('> ul', this).delay(200).slideUp(100);
+        $('> ul', this).delay(500).slideUp(200);
     });
 });
 
