@@ -16,10 +16,10 @@
 <?php if (is_child_theme()): ?>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?ver=<?php echo SKIPJACK_VERSION; ?>" />
 <?php endif; ?>
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php
-	if ( is_singular() && get_option( 'thread_comments' ) )
-		wp_enqueue_script( 'comment-reply' );
+	if (is_singular() && get_option('thread_comments'))
+		wp_enqueue_script('comment-reply');
 	wp_head();
 ?>
 </head>

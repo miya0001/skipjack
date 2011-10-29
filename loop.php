@@ -10,7 +10,7 @@
 	<div class="entry-meta clearfix">
 		<?php sj_posted_in(); ?>
 	</div><!-- .entry-meta -->
-    <div class="excerpt"><?php the_excerpt(); ?> <a href="<?php the_permalink(); ?>" class="more">続きを読む</a></div>
+    <div class="excerpt"><?php the_excerpt(); ?></div>
 </div>
 <?php endwhile; // End the loop. Whew. ?>
 

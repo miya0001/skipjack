@@ -127,35 +127,43 @@ function sj_featured_slide() {
         "orderby"           => 'meta_value_num',
         "order"             => 'DESC',
     );
-
-    $par = array();
-    foreach ($args as $key => $value) {
-        $par[] = $key.'='.$value;
+    query_posts($args);
+    if (!have_posts()) {
+        wp_reset_query();
+        $args = array(
+            "post_type"         => "any",
+            "nopaging"          => 0,
+            "posts_per_page"    => 20,
+            "post_status"       => 'publish',
+            "orderby"           => 'modified',
+            "order"             => 'DESC',
+        );
+        query_posts($args);
     }
-    query_posts(join('&', $par));
-    $data = array();
-    if (have_posts()) {
-        while (have_posts()) {
-            the_post();
-            global $post;
-            $url    = get_permalink();
-            $tid    = get_post_thumbnail_id();
-            $img    = wp_get_attachment_image_src($tid, 'featured');
-            $title  = get_the_title();
-            $exc    = get_the_excerpt();
-            echo '<div class="slide">';
-            printf(
-                '<div class="wrap" style="background-image:url(%s);" onclick="%s">',
-                $img[0],
-                "location.href='".$url."';"
-            );
-            echo '<div class="meta">';
-            echo '<h2><a href="'.$url.'">'.$title.'</a></h2>';
-            echo '<div class="excerpt">'.$exc.'</div>';
-            echo '</div>';
-            echo '</div>';
-            echo '</div>';
+    while (have_posts()) {
+        the_post();
+        global $post;
+        $url    = get_permalink();
+        if ($tid = get_post_thumbnail_id()) {
+            $src = wp_get_attachment_image_src($tid, 'featured');
+            $image = $src[0];
+        } else {
+            $image = get_bloginfo('stylesheet_directory').'/img/default.jpg';
         }
+        $title  = get_the_title();
+        $exc    = get_the_excerpt();
+        echo '<div class="slide">';
+        printf(
+            '<div class="wrap" style="background-image:url(%s);" onclick="%s">',
+            $image,
+            "location.href='".$url."';"
+        );
+        echo '<div class="meta">';
+        echo '<h2><a href="'.$url.'">'.$title.'</a></h2>';
+        echo '<div class="excerpt">'.$exc.'</div>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
     }
     wp_reset_query();
 }
@@ -328,7 +336,7 @@ add_action('widgets_init', 'sj_remove_recent_comments_style');
 if (! function_exists('sj_posted_in')) :
 function sj_posted_in() {
     $tag = '<div class="%s">%s</div>';
-    echo '<div class="post_meta">';
+    echo '<div class="post-meta">';
     the_date();
     echo ' by ';
     the_author_posts_link();
@@ -336,7 +344,7 @@ function sj_posted_in() {
 
     $cat = get_the_category_list(', ');
     if ($cat) {
-        printf($tag, 'post_meta', __('Category').': '.$cat);
+        printf($tag, 'post-meta', __('Category').': '.$cat);
     }
 }
 endif;
@@ -374,5 +382,10 @@ function sj_get_the_excerpt($str) {
     }
 }
 add_filter('get_the_excerpt', 'sj_get_the_excerpt');
+
+function sj_search_form( $form ) {
+    return preg_replace("/<label.+?<\/label>/", "", $form);
+}
+add_filter('get_search_form', 'sj_search_form');
 
 ?>
