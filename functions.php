@@ -1,6 +1,6 @@
 <?php
 
-define("SKIPJACK_VERSION", "1.3.1");
+define("SKIPJACK_VERSION", "1.3.2");
 
 require_once(dirname(__FILE__).'/includes/add_meta_box.php');
 
