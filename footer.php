@@ -35,11 +35,12 @@
 </div><!-- #fourth .widget-area -->
 
 </div><!-- .wrap -->
+
+<?php wp_footer(); ?>
+
 </div><!-- #footer -->
 
 </div><!-- #container -->
-
-<?php wp_footer(); ?>
 
 <!-- <?php echo get_num_queries(); ?> queries. <?php echo timer_stop(); ?> seconds. -->
 </body>
