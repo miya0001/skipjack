@@ -1319,3 +1319,12 @@ body.attachment #content .entry-content .navigation
     border: 1px solid #cccccc;
 }
 
+.sharing
+{
+    height: 40px;
+    overflow: hidden;
+    padding: 10px;
+    font-size: 12px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
