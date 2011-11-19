@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-30 02:06+0900\n"
+"POT-Creation-Date: 2011-11-20 04:03+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,7 @@ msgid ""
 msgstr "この記事はパスワードで保護されています。パスワードを入力してください。"
 
 #: ../comments.php:11
+#, php-format
 msgid "One Response to %2$s"
 msgid_plural "%1$s Responses to %2$s"
 msgstr[0] "1件のコメント"
@@ -42,131 +43,151 @@ msgstr "<span class=\"meta-nav\">&larr;</span> 過去のコメント"
 msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
 msgstr "最新のコメント <span class=\"meta-nav\">&rarr;</span>"
 
-#: ../functions.php:25
+#: ../functions.php:28
 msgid "Main Menu"
 msgstr "メインメニュー"
 
-#: ../functions.php:29
+#: ../functions.php:32
 msgid "Header Menu"
 msgstr "ヘッダーメニュー"
 
-#: ../functions.php:182
+#: ../functions.php:184
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
 msgstr "%s <span class=\"says\">さん:</span>"
 
-#: ../functions.php:185
+#: ../functions.php:187
 msgid "Your comment is awaiting moderation."
 msgstr "あなたのコメントは承認待ちです。"
 
-#: ../functions.php:192
+#: ../functions.php:194
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s %2$s"
 
-#: ../functions.php:192 ../functions.php:209
+#: ../functions.php:194 ../functions.php:211
 msgid "(Edit)"
 msgstr "（編集）"
 
-#: ../functions.php:209
+#: ../functions.php:211
 msgid "Pingback:"
 msgstr "ピンバック"
 
-#: ../functions.php:219
+#: ../functions.php:221
 msgid "Home (1)"
 msgstr "ホーム (1)"
 
-#: ../functions.php:221
+#: ../functions.php:223
 msgid "The first home widget area"
 msgstr "ホームウィジェットエリア (1)"
 
-#: ../functions.php:229
+#: ../functions.php:231
 msgid "Home (2)"
 msgstr "ホーム (2)"
 
-#: ../functions.php:231
+#: ../functions.php:233
 msgid "The second home widget area"
 msgstr "ホームウィジェットエリア (2)"
 
-#: ../functions.php:239
+#: ../functions.php:241
 msgid "Home (3)"
 msgstr "ホーム (3)"
 
-#: ../functions.php:241
+#: ../functions.php:243
 msgid "The third home widget area"
 msgstr "ホームウィジェットエリア (3)"
 
-#: ../functions.php:249
+#: ../functions.php:251
 msgid "Pages (1)"
 msgstr "固定ページ (1)"
 
-#: ../functions.php:251
+#: ../functions.php:253
 msgid "The primary widget area for Page"
 msgstr "固定ページウィジェットエリア (1)"
 
-#: ../functions.php:259
+#: ../functions.php:261
 msgid "Pages (2)"
 msgstr "固定ページ (2)"
 
-#: ../functions.php:261
+#: ../functions.php:263
 msgid "The secondary widget area for Page"
 msgstr "固定ページウィジェットエリア (2)"
 
-#: ../functions.php:269
+#: ../functions.php:271
 msgid "Posts (1)"
 msgstr "投稿 (1)"
 
-#: ../functions.php:271
+#: ../functions.php:273
 msgid "The primary widget area for Post"
 msgstr "投稿ウィジェットエリア (1)"
 
-#: ../functions.php:279
+#: ../functions.php:281
 msgid "Posts (2)"
 msgstr "投稿 (2)"
 
-#: ../functions.php:281
+#: ../functions.php:283
 msgid "The secondary widget area for Post"
 msgstr "投稿ウィジェットエリア (2)"
 
-#: ../functions.php:289
+#: ../functions.php:291
 msgid "footer (1)"
 msgstr "フッター (1)"
 
-#: ../functions.php:291
+#: ../functions.php:293
 msgid "The first footer widget area"
 msgstr "フッターウィジェットエリア (1)"
 
-#: ../functions.php:299
+#: ../functions.php:301
 msgid "footer (2)"
 msgstr "フッター (2)"
 
-#: ../functions.php:301
+#: ../functions.php:303
 msgid "The second footer widget area"
 msgstr "フッターウィジェットエリア (2)"
 
-#: ../functions.php:309
+#: ../functions.php:311
 msgid "footer (3)"
 msgstr "フッター (3)"
 
-#: ../functions.php:311
+#: ../functions.php:313
 msgid "The third footer widget area"
 msgstr "フッターウィジェットエリア (3)"
 
-#: ../functions.php:319
+#: ../functions.php:321
 msgid "footer (4)"
 msgstr "フッター (4)"
 
-#: ../functions.php:321
+#: ../functions.php:323
 msgid "The fourth footer widget area"
 msgstr "フッターウィジェットエリア (4)"
 
-#: ../functions.php:347
+#: ../functions.php:349 ../index.php:22
 msgid "Category"
 msgstr "カテゴリー"
 
-#: ../functions.php:358
+#: ../functions.php:360
 msgid "Home"
 msgstr "ホーム"
+
+#: ../includes/add_meta_box.php:20
+msgid "Featured"
+msgstr "スライダー"
+
+#: ../includes/add_meta_box.php:44
+msgid "Add featured slider."
+msgstr "スライダーに追加"
+
+#: ../includes/add_meta_box.php:47
+msgid "Order"
+msgstr "表示順"
+
+#: ../index.php:18
+msgid "Pages"
+msgstr "固定ページ"
+
+#: ../index.php:29
+msgid "Search"
+msgstr "検索"
 
 #: ../loop.php:19
 msgid "<span class=\"meta-nav\">&laquo; Previous</span>"

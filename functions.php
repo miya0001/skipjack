@@ -3,7 +3,7 @@
 if ( ! isset( $content_width ) )
 	$content_width = 630;
 
-define("SKIPJACK_VERSION", "1.3.3");
+define("SKIPJACK_VERSION", "1.4.0");
 
 require_once(dirname(__FILE__).'/includes/add_meta_box.php');
 
