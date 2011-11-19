@@ -1,5 +1,8 @@
 <?php
 
+if ( ! isset( $content_width ) )
+	$content_width = 630;
+
 define("SKIPJACK_VERSION", "1.3.3");
 
 require_once(dirname(__FILE__).'/includes/add_meta_box.php');
@@ -99,14 +102,14 @@ function sj_load_scripts() {
         );
         wp_register_script(
             'carousel',
-            get_bloginfo('template_directory').'/js/carousel.js',
+            get_template_directory_uri().'/js/carousel.js',
             array('jquery'),
             SKIPJACK_VERSION,
             true
         );
         wp_register_script(
             'skipjack',
-            get_bloginfo('template_directory').'/js/sj.js',
+            get_template_directory_uri().'/js/sj.js',
             array('jquery', 'carousel'),
             SKIPJACK_VERSION,
             true
@@ -142,13 +145,12 @@ function sj_featured_slide() {
     }
     while (have_posts()) {
         the_post();
-        global $post;
         $url    = get_permalink();
-        if ($tid = get_post_thumbnail_id()) {
-            $src = wp_get_attachment_image_src($tid, 'featured');
-            $image = $src[0];
+        if (has_post_thumbnail()) {
+            $thumb = get_the_post_thumbnail(get_the_ID(), 'featured');
+            $image = preg_replace("/.*src=[\"\'](.+?)[\"\'].*/", "$1", $thumb);;
         } else {
-            $image = get_bloginfo('stylesheet_directory').'/img/default.jpg';
+            $image = get_stylesheet_directory_uri().'/img/default.jpg';
         }
         $title  = get_the_title();
         $exc    = get_the_excerpt();
@@ -344,7 +346,7 @@ function sj_posted_in() {
 
     $cat = get_the_category_list(', ');
     if ($cat) {
-        printf($tag, 'post-meta', __('Category').': '.$cat);
+        printf($tag, 'post-meta', __('Category', 'skipjack').': '.$cat);
     }
 }
 endif;
@@ -354,7 +356,7 @@ function sj_breadcrumb() {
     global $post;
     $sep = '&nbsp;&raquo;&nbsp;';
     printf(
-        '<a href="'.get_option('home').'" title="%1$s">%1$s</a>%2$s',
+        '<a href="'.home_url().'" title="%1$s">%1$s</a>%2$s',
         __('Home', 'skipjack'),
         $sep
     );

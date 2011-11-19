@@ -15,18 +15,18 @@
 
 <div class="beta"><?php if (!dynamic_sidebar('second-home-widget-area')): ?>
     <div class="widget-container">
-        <h2 class="widget-title">ページ</h2>
+        <h2 class="widget-title"><?php _e("Pages", "skipjack"); ?></h2>
         <?php wp_page_menu() ?>
     </div>
     <div class="widget-container">
-        <h2 class="widget-title">カテゴリー</h2>
+        <h2 class="widget-title"><?php _e("Category", "skipjack"); ?></h2>
         <ul><?php wp_list_categories('title_li='); ?></ul>
     </div>
 <?php endif; ?></div><!-- .beta -->
 
 <div class="omega"><?php if (!dynamic_sidebar('third-home-widget-area')): ?>
     <div class="widget-container">
-        <h2 class="widget-title">検索</h2>
+        <h2 class="widget-title"><?php _e("Search", "skipjack"); ?></h2>
         <?php get_search_form(); ?>
     </div>
 <?php endif; ?></div><!-- .omega -->

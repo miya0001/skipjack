@@ -31,7 +31,7 @@
 <?php $tag_list = get_the_tag_list('', ', '); ?>
 <?php if ($tag_list): ?>
 <div id="tags">
-    <h2><?php _e('Tag'); ?></h2>
+    <h2><?php _e('Tag', 'skipjack'); ?></h2>
     <?php echo $tag_list; ?>
 </div>
 <?php endif; ?>

@@ -1,14 +1,12 @@
 @charset "utf-8";
 /*
 Theme Name: skipjack
-Theme URI: http://wpist.me/
+Theme URI: http://www.theta.ne.jp/
 Description: Basic Business Theme with Slider
-Author: Takayuki Miyauchi
-Author URI:  http://wpist.me/
+Author: THETA NETWORKS
 Version: 1.3
 License: GNU General Public License
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, white, two-columns, custom-header, custom-background, custom-menu
 */
 
 /* font */
@@ -585,19 +583,14 @@ body.attachment #content .hentry .attachment img
 
 #home-widgets .alpha .sticky
 {
-    border: 2px solid #dedede;
+    border: 1px solid #dedede;
     border-radius: 5px;
-    margin: 0 -20px 20px -10px;
-    padding: 10px;
-    background-image: url(img/bg-white.png);
-    background-position: left bottom;
-    background-repeat: repeat-x;
+    margin: 0 -10px 20px -10px;
 }
 
 #home-widgets .alpha .sticky h2
 {
-    margin: 0;
-    border: none;
+    padding-left: 10px;
 }
 
 #home-widgets .alpha .sticky .entry-meta
@@ -898,12 +891,11 @@ div.aligncenter {
    border: 0 none;
 }
 
-.wp-caption .wp-caption-text,
-.gallery-caption {
-    font-size: 80%;
-    line-height: 17px;
-    padding: 0 4px 5px;
-    margin: 0;
+.wp-caption p.wp-caption-text {
+   font-size: 80%;
+   line-height: 17px;
+   padding: 0 4px 5px;
+   margin: 0;
 }
 
 #social .btn

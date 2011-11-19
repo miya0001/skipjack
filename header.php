@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<html
-    xmlns="http://www.w3.org/1999/xhtml"
-    xml:lang="<?php bloginfo('language'); ?>" lang="<?php bloginfo('language'); ?>"
-    xmlns:og="http://ogp.me/ns#"
-    xmlns:fb="http://www.facebook.com/2008/fbml">
+<html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php
@@ -11,8 +7,8 @@
     bloginfo('name');
 ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/reset.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/style.css?ver=<?php echo SKIPJACK_VERSION; ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/style.css?ver=<?php echo SKIPJACK_VERSION; ?>" />
 <?php if (is_child_theme()): ?>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?ver=<?php echo SKIPJACK_VERSION; ?>" />
 <?php endif; ?>

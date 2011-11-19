@@ -17,7 +17,7 @@ public function add_meta_box()
     if ($post_type == 'page' || $post_type == 'post') {
         add_meta_box(
             'featured_setting',
-            'スライド表示',
+            __('Featured', 'skipjack'),
             array(&$this, 'callback'),
             $post_type,
             'side',
@@ -41,10 +41,10 @@ public function callback($post)
         echo '<input type="checkbox" value="1" name="featured" id="featured" />';
         $featured = '0';
     }
-    echo ' <label for="featured">この記事をスライドに表示</label>';
+    echo ' <label for="featured">'.__('Add featured slider.').'</label>';
     echo '</div>';
     echo '<div id="featured-order-container" style="margin-top:1em;">';
-    echo '<label for="">表示順</label>: ';
+    echo '<label for="">'.__('Order', 'skipjack').'</label>: ';
     printf(
         '<input type="text" id="%1$s" name="%1$s" value="%2$s" style="%3$s" />',
         'featured_order',
