@@ -124,11 +124,12 @@ function sj_featured_slide() {
     $args = array(
         "post_type"         => "any",
         "nopaging"          => 0,
-        "posts_per_page"    => 20,
+        "posts_per_page"    => 10,
         "post_status"       => 'publish',
         "meta_key"          => '_featured',
         "orderby"           => 'meta_value_num',
         "order"             => 'DESC',
+        "ignore_sticky_posts"    => 1,
     );
     query_posts($args);
     if (!have_posts()) {
@@ -136,7 +137,7 @@ function sj_featured_slide() {
         $args = array(
             "post_type"         => "any",
             "nopaging"          => 0,
-            "posts_per_page"    => 20,
+            "posts_per_page"    => 10,
             "post_status"       => 'publish',
             "orderby"           => 'modified',
             "order"             => 'DESC',
@@ -390,4 +391,9 @@ function sj_search_form( $form ) {
 }
 add_filter('get_search_form', 'sj_search_form');
 
+function sj_post_thumbnail_html($img) {
+    $img = preg_replace("/(height|width)=[\"\'].+?[\"\']/i", "", $img);
+    return $img;
+}
+add_filter('post_thumbnail_html', 'sj_post_thumbnail_html');
 ?>

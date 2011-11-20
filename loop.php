@@ -10,7 +10,11 @@
 	<div class="entry-meta clearfix">
 		<?php sj_posted_in(); ?>
 	</div><!-- .entry-meta -->
+    <?php if (has_post_thumbnail()): ?>
+    <?php the_post_thumbnail(); ?>
+    <?php else: ?>
     <div class="excerpt"><?php the_excerpt(); ?></div>
+    <?php endif; ?>
 </div>
 <?php endwhile; // End the loop. Whew. ?>
 

@@ -41,7 +41,7 @@ public function callback($post)
         echo '<input type="checkbox" value="1" name="featured" id="featured" />';
         $featured = '0';
     }
-    echo ' <label for="featured">'.__('Add featured slider.').'</label>';
+    echo ' <label for="featured">'.__('Add featured slider.', 'skipjack').'</label>';
     echo '</div>';
     echo '<div id="featured-order-container" style="margin-top:1em;">';
     echo '<label for="">'.__('Order', 'skipjack').'</label>: ';
