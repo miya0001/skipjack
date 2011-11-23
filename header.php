@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/style.css?ver=<?php echo SKIPJACK_VERSION; ?>" />
 <?php if (is_child_theme()): ?>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?ver=<?php echo SKIPJACK_VERSION; ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css?ver=<?php echo filemtime(get_stylesheet_directory().'/style.css') ?>" />
 <?php endif; ?>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php

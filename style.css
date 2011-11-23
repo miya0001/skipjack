@@ -656,6 +656,7 @@ body.attachment #content .hentry .attachment img
     border-collapse: collapse;
     border: 1px solid #dedede;
     margin: 1em 0;
+    width: 100%;
 }
 
 #content #alpha .hentry th
@@ -665,6 +666,9 @@ body.attachment #content .hentry .attachment img
     font-weight: bolder;
     font-size: 80%;
     white-space: nowrap;
+    background-image: url(img/bg-white.png);
+    background-repeat: repeat-x;
+    background-position: left bottom;
 }
 
 #content #alpha .hentry td
