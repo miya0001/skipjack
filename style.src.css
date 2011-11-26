@@ -536,6 +536,8 @@ body.attachment #content .hentry .attachment img
     font-size: 80%;
     line-height: auto;
     margin: 0;
+    overflow: auto;
+    margin-bottom: 1em;
 }
 
 .entry-meta .post-meta
