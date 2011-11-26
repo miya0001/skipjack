@@ -809,6 +809,12 @@ body.attachment #content .hentry .attachment img
     background-color: transparent;
 }
 
+.entry-content
+{
+    clear: both;
+    overflow: auto;
+}
+
 /*
     other style
 */
