@@ -535,8 +535,8 @@ body.attachment #content .hentry .attachment img
     background-position: left center;
     font-size: 80%;
     line-height: auto;
-    margin: 0;
     overflow: auto;
+    margin: 0;
     margin-bottom: 1em;
 }
 
