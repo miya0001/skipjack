@@ -396,4 +396,11 @@ function sj_post_thumbnail_html($img) {
     return $img;
 }
 add_filter('post_thumbnail_html', 'sj_post_thumbnail_html');
+
+
+add_filter('get_the_categories', 'my_get_the_categories');
+function my_get_the_categories($categories){
+    usort($categories, '_usort_terms_by_ID');
+    return $categories;
+}
 ?>

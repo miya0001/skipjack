@@ -814,7 +814,14 @@ body.attachment #content .hentry .attachment img
 .entry-content
 {
     clear: both;
-    overflow: auto;
+}
+
+.entry-content img.size-full,
+img.attachment-post-thumbnail
+{
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 
 /*
