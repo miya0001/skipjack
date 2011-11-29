@@ -33,11 +33,17 @@ a:hover {
 
 .wrap,
 #primary-menu > div > ul,
-#home-widgets,
-#content
+#home-widgets
 {
     width: 940px;
     margin: 10px auto 0 auto;
+}
+
+#content
+{
+    width: 940px;
+    margin: 30px auto;
+    overflow: auto;
 }
 
 .clearfix
@@ -49,11 +55,15 @@ a:hover {
 #content #alpha
 {
     width: 640px;
+    float: left;
+    overflow: hidden;
 }
 
 #content #beta
 {
     width: 280px;
+    float: right;
+    overflow: hidden;
 }
 
 body.attachment #content .hentry .attachment img
@@ -389,6 +399,8 @@ body.attachment #content .hentry .attachment img
 
 #footer
 {
+    float: none;
+    clear: both;
     overflow: auto;
     background-color: #666666;
     margin-top: 30px;
@@ -455,11 +467,6 @@ body.attachment #content .hentry .attachment img
 /*
     content
 */
-#content
-{
-    overflow: auto;
-    margin: 30px auto;
-}
 
 #content #alpha .navigation
 {
@@ -481,16 +488,6 @@ body.attachment #content .hentry .attachment img
     float: right;
 }
 
-#content #alpha
-{
-    float: left;
-}
-
-#content #beta
-{
-    float: right;
-}
-
 #content #alpha .post-thumbnail img
 {
     border: 1px solid #555555;
@@ -508,7 +505,7 @@ body.attachment #content .hentry .attachment img
     background-position: left center;
     font-size: 22px;
     font-weight: bolder;
-    padding: 16px 10px;
+    padding: 16px 0px;
     border: 1px solid #dedede;
     border-radius: 5px;
     margin: 0px 0 10px 0;
@@ -524,7 +521,6 @@ body.attachment #content .hentry .attachment img
     background-image: url(img/line.png);
     background-repeat: repeat-x;
     background-position: left bottom;
-    margin: 0 -10px;
 }
 
 .entry-meta
@@ -551,7 +547,6 @@ body.attachment #content .hentry .attachment img
 
 #content #alpha .hentry
 {
-    margin: 20px 5px;
 }
 
 .search #content #alpha .hentry,
@@ -582,10 +577,12 @@ body.attachment #content .hentry .attachment img
 {
     border-bottom: none;
     border-left: 5px solid #cccccc;
-    margin: 1em -10px;
-    padding: 10px 5px;
+    margin: 2em -10px 1em -10px;
+    padding: 8px 5px;
     font-weight: bolder;
     font-size: 18px;
+    float: none;
+    clear: both;
 }
 
 #home-widgets .alpha .hentry h2
@@ -636,6 +633,8 @@ body.attachment #content .hentry .attachment img
     font-weight: bolder;
     border-bottom: 1px dashed #dedede;
     padding: 5px;
+    float: none;
+    overflow: hidden;
 }
 
 #content #alpha .hentry h4,
@@ -644,6 +643,8 @@ body.attachment #content .hentry .attachment img
 {
     margin: 1em 0;
     font-weight: bolder;
+    float: none;
+    overflow: hidden;
 }
 
 #content #alpha .hentry blockquote
@@ -822,6 +823,7 @@ body.attachment #content .hentry .attachment img
 .entry-content
 {
     clear: both;
+    float: none;
     width: 620px;
     margin: 0 auto;
 }
