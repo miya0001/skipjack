@@ -484,13 +484,11 @@ body.attachment #content .hentry .attachment img
 #content #alpha
 {
     float: left;
-    overflow: hidden;
 }
 
 #content #beta
 {
     float: right;
-    overflow: hidden;
 }
 
 #content #alpha .post-thumbnail img
@@ -526,18 +524,19 @@ body.attachment #content .hentry .attachment img
     background-image: url(img/line.png);
     background-repeat: repeat-x;
     background-position: left bottom;
-    margin: 0;
+    margin: 0 -10px;
 }
 
 .entry-meta
 {
-    padding: 10px;
+    padding: 10px 0;
     background-position: left center;
     font-size: 80%;
     line-height: auto;
-    overflow: auto;
     margin: 0;
     margin-bottom: 1em;
+    width: 100%;
+    height: auto;
 }
 
 .entry-meta .post-meta
@@ -814,6 +813,8 @@ body.attachment #content .hentry .attachment img
 .entry-content
 {
     clear: both;
+    width: 620px;
+    margin: 0 auto;
 }
 
 .entry-content img.size-full,
