@@ -1,3 +1,9 @@
+html .mceContentBody {
+	max-width: 620px;
+	font: 16px Arial, sans-serif;
+    color: #555555;
+}
+
 table
 {
     width: 100%;
@@ -5,7 +11,22 @@ table
 
 h2
 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+h3
+{
+    font-weight: bolder;
     clear: both;
     float: none;
+}
+
+img.size-full,
+img.attachment-post-thumbnail
+{
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 
