@@ -505,7 +505,7 @@ body.attachment #content .hentry .attachment img
     background-position: left center;
     font-size: 22px;
     font-weight: bolder;
-    padding: 16px 0px;
+    padding: 16px 0px 16px 16px;
     border: 1px solid #dedede;
     border-radius: 5px;
     margin: 0px 0 10px 0;
@@ -521,6 +521,7 @@ body.attachment #content .hentry .attachment img
     background-image: url(img/line.png);
     background-repeat: repeat-x;
     background-position: left bottom;
+    padding-left: 0px;
 }
 
 .entry-meta
@@ -959,7 +960,9 @@ body.single-format-aside #content #alpha,
 body.page-format-aside #content #alpha,
 body.attachment #content #alpha
 {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
 }
 
 /*
@@ -968,19 +971,15 @@ body.attachment #content #alpha
 body.single-format-gallery #content #alpha,
 body.page-format-gallery #content #alpha
 {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
 }
 
 body.single-format-gallery #content #alpha .hentry,
 body.page-format-gallery #content #alpha .hentry
 {
-    background-color: #666666;
     padding: 30px 0 0 0;
-    background-image: url(img/bg.png);
-    background-repeat: repeat-x;
-    background-position: left bottom;
-    border-radius: 5px;
-    color: #ffffff;
 }
 
 /*
