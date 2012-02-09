@@ -36,12 +36,12 @@
 
 </div><!-- .wrap -->
 
-<?php wp_footer(); ?>
-
 </div><!-- #footer -->
 
 </div><!-- #container -->
 
 <!-- <?php echo get_num_queries(); ?> queries. <?php echo timer_stop(); ?> seconds. -->
+
+<?php wp_footer(); ?>
 </body>
 </html>
