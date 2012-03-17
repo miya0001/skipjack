@@ -59,6 +59,12 @@ a:hover {
     overflow: hidden;
 }
 
+.page-format-aside #alpha,
+.post-format-aside #alpha
+{
+    width: 940px !important;
+}
+
 #content #beta
 {
     width: 280px;
@@ -827,6 +833,12 @@ body.attachment #content .hentry .attachment img
     float: none;
     width: 620px;
     margin: 0 auto;
+}
+
+.page-format-aside .entry-content,
+.post-format-aside .entry-content
+{
+    width: 920px;
 }
 
 .entry-content img.size-full,
