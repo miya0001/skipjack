@@ -835,6 +835,12 @@ body.attachment #content .hentry .attachment img
     margin: 0 auto;
 }
 
+.page-format-aside .entry-content,
+.post-format-aside .entry-content
+{
+    width: 920px;
+}
+
 .entry-content img.size-full,
 img.attachment-post-thumbnail
 {
