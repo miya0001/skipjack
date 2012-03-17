@@ -95,7 +95,7 @@ function sj_load_scripts() {
         wp_deregister_script( 'jquery' );
         wp_register_script(
             'jquery',
-            'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js',
+            'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
             false,
             null,
             true
