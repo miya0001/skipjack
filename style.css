@@ -59,6 +59,12 @@ a:hover {
     overflow: hidden;
 }
 
+.page-format-aside #alpha,
+.post-format-aside #alpha
+{
+    width: 940px !important;
+}
+
 #content #beta
 {
     width: 280px;
