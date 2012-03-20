@@ -214,7 +214,6 @@ body.attachment #content .hentry .attachment img
     height: 50px;
     float: left;
     position: relative;
-    margin: 0 5px;
 }
 
 #primary-menu > div > ul > li > a
@@ -1393,4 +1392,11 @@ body.attachment #content .hentry .navigation
     font-size: 12px;
     border-top: 1px solid #dedede;
     border-bottom: 1px solid #dedede;
+}
+
+.widget-container img
+{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
