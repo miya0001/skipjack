@@ -1,6 +1,6 @@
 <?php
 
-if ( ! isset( $content_width ) )
+if ( !isset( $content_width ) || !$content_width)
 	$content_width = 620;
 
 define("SKIPJACK_VERSION", "1.4.0");
