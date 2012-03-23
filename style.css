@@ -1369,3 +1369,9 @@ body.attachment #content .hentry .content
     border-bottom: 1px solid #dedede;
 }
 
+.widget-container img
+{
+    max-width: 100%;
+    height: auto;
+}
+
