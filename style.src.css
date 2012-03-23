@@ -32,16 +32,20 @@ a:hover {
 }
 
 .wrap,
+#primary-menu > div > ul
+{
+    width: 940px !important;
+}
+
+.wrap,
 #primary-menu > div > ul,
 #home-widgets
 {
-    width: 940px;
     margin: 10px auto 0 auto;
 }
 
 #content
 {
-    width: 940px;
     margin: 30px auto;
     overflow: auto;
 }
@@ -59,12 +63,6 @@ a:hover {
     overflow: hidden;
 }
 
-.page-format-aside #alpha,
-.post-format-aside #alpha
-{
-    width: 940px !important;
-}
-
 #content #beta
 {
     width: 280px;
@@ -74,8 +72,8 @@ a:hover {
 
 body.attachment #content .hentry .attachment img
 {
-    max-width: 920px;
-    max-height: 920px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* #header */
@@ -214,6 +212,7 @@ body.attachment #content .hentry .attachment img
     height: 50px;
     float: left;
     position: relative;
+    margin-right: 10px;
 }
 
 #primary-menu > div > ul > li > a
@@ -831,14 +830,7 @@ body.attachment #content .hentry .attachment img
 {
     clear: both;
     float: none;
-    width: 620px;
-    margin: 0 auto;
-}
-
-.page-format-aside .entry-content,
-.post-format-aside .entry-content
-{
-    width: 920px;
+    margin: 0 10px;
 }
 
 .entry-content img.size-full,
@@ -967,26 +959,18 @@ div.aligncenter {
 
 /*
     post format: aside
+    post format: gallery
 */
 body.single-format-aside #content #alpha,
 body.page-format-aside #content #alpha,
+body.single-format-gallery #content #alpha,
+body.page-format-gallery #content #alpha,
 body.attachment #content #alpha
 {
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     float: none;
 }
 
-/*
-    post format: gallery
-*/
-body.single-format-gallery #content #alpha,
-body.page-format-gallery #content #alpha
-{
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-}
 
 body.single-format-gallery #content #alpha .hentry,
 body.page-format-gallery #content #alpha .hentry
@@ -1331,14 +1315,6 @@ body.attachment #content .hentry .content
     clear: both;
     float: none;
     margin: 2em auto;
-    width: 640px;
-}
-
-body.attachment #content .hentry .navigation
-{
-    position: absolute;
-    top: 100px;
-    width: 920px;
 }
 
 /*
@@ -1393,3 +1369,10 @@ body.attachment #content .hentry .navigation
     border-top: 1px solid #dedede;
     border-bottom: 1px solid #dedede;
 }
+
+.widget-container img
+{
+    max-width: 100%;
+    height: auto;
+}
+
