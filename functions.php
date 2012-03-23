@@ -3,7 +3,7 @@
 if ( !isset( $content_width ) || !$content_width)
 	$content_width = 620;
 
-define("SKIPJACK_VERSION", "1.4.0");
+define("SKIPJACK_VERSION", "1.45.0");
 
 require_once(dirname(__FILE__).'/includes/add_meta_box.php');
 
@@ -16,7 +16,7 @@ function sj_setup() {
 	load_theme_textdomain('skipjack', TEMPLATEPATH . '/languages');
 
     add_image_size('featured', 940, 360, true);
-    add_image_size('270x152', 270, 152, true);
+    add_image_size('widget', 270, 103, true);
     set_post_thumbnail_size(638, 244, true);
 
     add_editor_style();
