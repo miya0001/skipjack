@@ -5,7 +5,7 @@
 <div id="carousel-nav"></div>
 </div><!--end #featured-->
 
-<div id="home-widgets">
+<div id="home-widgets" class="wrap">
 
 <div class="alpha"><?php if (!dynamic_sidebar('first-home-widget-area')): ?>
     <div class="widget-container">

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="content">
+<div id="content" class="wrap">
 <div id="alpha">
 
     <h1 class="entry-title">Not Found</h1>
