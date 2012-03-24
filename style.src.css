@@ -265,8 +265,8 @@ body.attachment #content .hentry .attachment img
     height: 360px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: #000000;
-    border: 1px solid #000000;
+    background-color: #dedede;
+    border: 1px solid #dedede;
     position: relative;
     cursor: pointer;
     margin: 0 auto;
