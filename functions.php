@@ -32,17 +32,32 @@ function sj_setup() {
         'secondly' => __("Header Menu", "skipjack"),
     ));
 
-    add_custom_background();
+    $defaults = array(
+        'default-color'          => '',
+        'default-image'          => '',
+        'wp-head-callback'       => '_custom_background_cb',
+        'admin-head-callback'    => '',
+        'admin-preview-callback' => ''
+    );
 
-    if (! defined('HEADER_TEXTCOLOR'))
-        define('HEADER_TEXTCOLOR', '');
+    add_theme_support( 'custom-background', $defaults );
 
-    define('HEADER_IMAGE_WIDTH', apply_filters('sj_header_image_width', 300));
-    define('HEADER_IMAGE_HEIGHT', apply_filters('sj_header_image_height', 60));
+    $defaults = array(
+        'default-image'          => '',
+        'random-default'         => false,
+        'width'                  => apply_filters('sj_header_image_width', 300),
+        'height'                 => apply_filters('sj_header_image_height', 60),
+        'flex-height'            => false,
+        'flex-width'             => false,
+        'default-text-color'     => '',
+        'header-text'            => true,
+        'uploads'                => true,
+        'wp-head-callback'       => '',
+        'admin-head-callback'    => '',
+        'admin-preview-callback' => '',
+    );
 
-    define('NO_HEADER_TEXT', true);
-
-    add_custom_image_header('', 'sj_admin_header_style');
+    add_theme_support( 'custom-header', $defaults );
 }
 endif;
 
